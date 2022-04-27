@@ -2,16 +2,22 @@
 
 Status|	Status Hex	|Description|	Explanation
 ---|-------|-----------------------------------------------------|---------
-0	|0x00	|BLE_HCI_STATUS_CODE_SUCCESS	                     |Everything ok.
+0	|0x00	|BLE_HCI_STATUS_CODE_SUCCESS	                     |Everything ok!:)
 1	|0x01	|BLE_HCI_STATUS_CODE_UNKNOWN_BTLE_COMMAND	         |              
 1	|0x01	|CONNECTION_PRIORITY_HIGH               	         |(New)Connection parameter update - Request a high priority, low latency connection. An application should only request high priority connection parameters to transfer large amounts of data over LE quickly. Once the transfer is complete, the application should request BluetoothGatt#CONNECTION_PRIORITY_BALANCED connection parameters to reduce energy use.                            
 2	|0x02	|BLE_HCI_STATUS_CODE_UNKNOWN_CONNECTION_IDENTIFIER	 |              
-2	|0x02	|CONNECTION_PRIORITY_LOW_POWER                   	 |(New)Connection parameter update - Request low power, reduced data rate connection parameters.                 
-5	|0x05	|BLE_HCI_AUTHENTICATION_FAILURE	                     |            
-6	|0x06	|BLE_HCI_STATUS_CODE_PIN_OR_KEY_MISSING	             |                    
-7	|0x07	|BLE_HCI_MEMORY_CAPACITY_EXCEEDED	                 |                
+2	|0x02	|CONNECTION_PRIORITY_LOW_POWER                   	 |(New)Connection parameter update - Request low power, reduced data rate connection parameters.       
+3	|0x03	|GATT_WRITE_NOT_PERMITTED                        	 |GATT write operation is not permitted              
+5	|0x05	|BLE_HCI_AUTHENTICATION_FAILURE	                     |Insufficient authentication for a given operation            
+6	|0x06	|BLE_HCI_STATUS_CODE_PIN_OR_KEY_MISSING	             |        
+6	|0x06	|GATT_REQUEST_NOT_SUPPORTED         	             |The given request is not supported             
+7	|0x07	|BLE_HCI_MEMORY_CAPACITY_EXCEEDED	                 |        
+7	|0x07	|GATT_INVALID_OFFSET            	                 |A read or write operation was requested with an invalid offset           
 8	|0x08	|BLE_HCI_CONNECTION_TIMEOUT                          |Could not establish a connection in specified period. Maybe device is currently connected to something else?
+8	|0x08	|GATT_INSUFFICIENT_AUTHORIZATION                     |Insufficient authorization for a given operation
 12	|0x0C	|BLE_HCI_STATUS_CODE_COMMAND_DISALLOWED	             |
+13	|0xD	|GATT_INVALID_ATTRIBUTE_LENGTH       	             |A write operation exceeds the maximum length of the attribute
+15	|0xF	|GATT_INSUFFICIENT_ENCRYPTION       	             |Insufficient encryption for a given operation 
 18	|0x12	|BLE_HCI_STATUS_CODE_INVALID_BTLE_COMMAND_PARAMETERS |
 19	|0x13	|BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION           |Remote device has forced a disconnect.
 20	|0x14	|BLE_HCI_REMOTE_DEV_TERMINATION_DUE_TO_LOW_RESOURCES |                                                           

@@ -2,8 +2,9 @@
 This table based of information from:
 * https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.s132.api.v2.0.0%2Fgroup___b_l_e___h_c_i___s_t_a_t_u_s___c_o_d_e_s.html
 * http://allmydroids.blogspot.com/2015/06/android-ble-error-status-codes-explained.html
+* My experience of work with BLE Tags
 
-(New) - is mark for last interpretation of this status code
+(New) - is mark for new interpretation of this status code, may be repeated codes, because we have different interpretation from different sources of some codes
 
 Status|	Status Hex	|Description|	Explanation
 ---|-------|-----------------------------------------------------|---------

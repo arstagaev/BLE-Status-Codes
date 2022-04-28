@@ -19,7 +19,7 @@ Status|	Status Hex	|Description|	Explanation
 6	|0x06	|GATT_REQUEST_NOT_SUPPORTED         	             |The given request is not supported             
 7	|0x07	|BLE_HCI_MEMORY_CAPACITY_EXCEEDED	                 |        
 7	|0x07	|GATT_INVALID_OFFSET            	                 |A read or write operation was requested with an invalid offset           
-8	|0x08	|BLE_HCI_CONNECTION_TIMEOUT                          |Could not establish a connection in specified period. Maybe device is currently connected to something else?
+8	|0x08	|BLE_HCI_CONNECTION_TIMEOUT                          |Could not establish a connection in specified period. Maybe when distance for connect is so long or device is currently connected to something else
 8	|0x08	|GATT_INSUFFICIENT_AUTHORIZATION                     |Insufficient authorization for a given operation
 12	|0x0C	|BLE_HCI_STATUS_CODE_COMMAND_DISALLOWED	             |
 13	|0xD	|GATT_INVALID_ATTRIBUTE_LENGTH       	             |A write operation exceeds the maximum length of the attribute
